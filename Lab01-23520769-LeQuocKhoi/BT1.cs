@@ -140,7 +140,8 @@ namespace Lab01_23520769_LeQuocKhoi
 			double quotient = 0;
 			bool s1 = Int32.TryParse(textBox1.Text.Trim(), out num1);
 			bool s2 = Int32.TryParse(textBox2.Text.Trim(), out num2);
-			if (s1 && s2)
+			if(num2 == 0) MessageBox.Show("Không thể chia cho 0. Vui lòng nhập lại.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           else if (s1 && s2)
 			{
 				quotient = (double)num1 / (double)num2;
 				textBox3.Text = quotient.ToString();
