@@ -73,17 +73,23 @@
     <Compile Include="Bai3.Designer.cs">
       <DependentUpon>Bai3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bai4.cs">
+    <Compile Include="Bai4_ThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bai4.Designer.cs">
-      <DependentUpon>Bai4.cs</DependentUpon>
+    <Compile Include="Bai4_ThongTin.Designer.cs">
+      <DependentUpon>Bai4_ThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="Bai5.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Bai5.Designer.cs">
       <DependentUpon>Bai5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai4_DuLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai4_DuLieu.Designer.cs">
+      <DependentUpon>Bai4_DuLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -96,8 +102,20 @@
     <EmbeddedResource Include="Bai1.resx">
       <DependentUpon>Bai1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bai2.resx">
+      <DependentUpon>Bai2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bai3.resx">
       <DependentUpon>Bai3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai4_DuLieu.resx">
+      <DependentUpon>Bai4_DuLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai4_ThongTin.resx">
+      <DependentUpon>Bai4_ThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai5.resx">
+      <DependentUpon>Bai5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

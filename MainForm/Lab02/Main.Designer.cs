@@ -121,7 +121,7 @@
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Lab02";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
 

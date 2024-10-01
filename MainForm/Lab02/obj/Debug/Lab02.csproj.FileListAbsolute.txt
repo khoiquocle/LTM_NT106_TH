@@ -14,3 +14,7 @@ D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.pdb
 D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai1.resources
 D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Main.resources
 D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai3.resources
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai4_ThongTin.resources
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai4_DuLieu.resources
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai2.resources
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai5.resources

@@ -46,7 +46,7 @@ namespace Lab02
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Bai4 bai4 = new Bai4();
+            Bai4_ThongTin bai4 = new Bai4_ThongTin();
             bai4.Show();
         }
 
