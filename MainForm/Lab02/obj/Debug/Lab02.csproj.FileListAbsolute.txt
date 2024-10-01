@@ -11,3 +11,6 @@ D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.ca
 D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.csproj.Up2Date
 D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.exe
 D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.pdb
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai1.resources
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Main.resources
+D:\NT106\LTM_NT106_TH\MainForm\Lab02\obj\Debug\Lab02.Bai3.resources
