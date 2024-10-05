@@ -88,8 +88,11 @@ namespace Lab02
         private void btnWrite_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Text files (*.txt)|*.txt|All file (*.*)|*.*";
-
+            {
+                saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveFileDialog.Title = "Lưu kết quả";
+                saveFileDialog.FileName = "output.txt";
+            }
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllText(saveFileDialog.FileName, txtResult.Text);

@@ -49,7 +49,7 @@
             this.btn_Nhap.Size = new System.Drawing.Size(144, 44);
             this.btn_Nhap.TabIndex = 1;
             this.btn_Nhap.Text = "Nhập dữ liệu ";
-            this.btn_Nhap.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_Nhap.Click += new System.EventHandler(this.btn_NhapDuLieu);
             // 
             // btnLuu
             // 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ReadFile = new Guna.UI2.WinForms.Guna2Button();
             this.labelTen = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelUrl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelSodong = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,21 +42,21 @@
             this.txtContent = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // btn_ReadFile
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(31, 11);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(184, 48);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "ĐỌC FILE";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_ReadFile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ReadFile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ReadFile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ReadFile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ReadFile.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ReadFile.ForeColor = System.Drawing.Color.White;
+            this.btn_ReadFile.Location = new System.Drawing.Point(31, 11);
+            this.btn_ReadFile.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ReadFile.Name = "btn_ReadFile";
+            this.btn_ReadFile.Size = new System.Drawing.Size(184, 48);
+            this.btn_ReadFile.TabIndex = 0;
+            this.btn_ReadFile.Text = "ĐỌC FILE";
+            this.btn_ReadFile.Click += new System.EventHandler(this.btn_ReadFiles);
             // 
             // labelTen
             // 
@@ -245,7 +245,7 @@
             this.Controls.Add(this.txtFileName);
             this.Controls.Add(this.labelSokytu);
             this.Controls.Add(this.labelSodong);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btn_ReadFile);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Bai2";
             this.Text = "Bai 2";
@@ -257,7 +257,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_ReadFile;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelTen;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelUrl;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelSodong;

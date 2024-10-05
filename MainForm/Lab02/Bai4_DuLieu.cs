@@ -33,7 +33,7 @@ namespace Lab02
             dataGridView1.Columns.Add("DTB", "Điểm Trung Bình");
         }
 
-            private void guna2Button1_Click(object sender, EventArgs e)
+            private void btn_NhapDuLieu(object sender, EventArgs e)
             {
             
                 SaveFileDialog saveFileDialog = new SaveFileDialog();

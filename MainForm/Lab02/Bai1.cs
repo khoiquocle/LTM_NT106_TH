@@ -22,7 +22,7 @@ namespace Lab02
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btn_ReadFile(object sender, EventArgs e)
         {
             // Đặt bộ lọc để chỉ cho phép chọn file văn bản (.txt)
             ofd.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
@@ -48,7 +48,7 @@ namespace Lab02
             }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btn_WriteFiles(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
 

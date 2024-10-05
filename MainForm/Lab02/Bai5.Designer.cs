@@ -39,7 +39,7 @@
             // 
             this.labelPath.BackColor = System.Drawing.Color.Transparent;
             this.labelPath.Location = new System.Drawing.Point(11, 15);
-            this.labelPath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelPath.Margin = new System.Windows.Forms.Padding(2);
             this.labelPath.Name = "labelPath";
             this.labelPath.Size = new System.Drawing.Size(28, 15);
             this.labelPath.TabIndex = 0;
@@ -74,7 +74,7 @@
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
             this.btnBrowse.Location = new System.Drawing.Point(389, 9);
-            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(70, 21);
             this.btnBrowse.TabIndex = 2;
@@ -90,7 +90,7 @@
             this.btbBack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btbBack.ForeColor = System.Drawing.Color.White;
             this.btbBack.Location = new System.Drawing.Point(463, 9);
-            this.btbBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btbBack.Margin = new System.Windows.Forms.Padding(2);
             this.btbBack.Name = "btbBack";
             this.btbBack.Size = new System.Drawing.Size(64, 21);
             this.btbBack.TabIndex = 3;
@@ -101,7 +101,7 @@
             // 
             this.listViewFiles.HideSelection = false;
             this.listViewFiles.Location = new System.Drawing.Point(-2, 50);
-            this.listViewFiles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listViewFiles.Margin = new System.Windows.Forms.Padding(2);
             this.listViewFiles.Name = "listViewFiles";
             this.listViewFiles.Size = new System.Drawing.Size(529, 240);
             this.listViewFiles.TabIndex = 4;
@@ -118,9 +118,9 @@
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtPath);
             this.Controls.Add(this.labelPath);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Bai5";
-            this.Text = "Form1";
+            this.Text = "Duyet thu muc";
             this.ResumeLayout(false);
             this.PerformLayout();
 
