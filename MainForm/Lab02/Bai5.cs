@@ -22,9 +22,9 @@ namespace Lab02
         private void InitializeListView()
         {
             listViewFiles.Columns.Add("Tên File", 200);
-            listViewFiles.Columns.Add("Kích Thước (KB)", 100);
+            listViewFiles.Columns.Add("Type", 100);
             listViewFiles.Columns.Add("Ngày Tạo", 150);
-            listViewFiles.Columns.Add("Ngày Sửa", 150);
+            listViewFiles.Columns.Add("Kích thước (KB)", 150);
         }
 
         private void labelPath_Click(object sender, EventArgs e)
@@ -63,19 +63,20 @@ namespace Lab02
             {
                 ListViewItem item = new ListViewItem(directory.Name);
                 item.SubItems.Add("Folder"); // Hiển thị là folder
+                item.SubItems.Add(directory.LastWriteTime.ToString()); // Hiển thị ngày sửa đổi
+                item.SubItems.Add(""); // Thư mục không có kích thước
                 listViewFiles.Items.Add(item);
             }
 
-            // Hiển thị các tệp mà người dùng đã chọn
-            foreach (string filePath in selectedFiles)
+            // Lấy tất cả các tệp trong thư mục
+            FileInfo[] files = directoryInfo.GetFiles();
+            foreach (FileInfo file in files)
             {
-                if (File.Exists(filePath)) // Kiểm tra xem tệp có tồn tại không
-                {
-                    FileInfo file = new FileInfo(filePath);
-                    ListViewItem item = new ListViewItem(file.Name);
-                    item.SubItems.Add("File"); // Hiển thị là file
-                    listViewFiles.Items.Add(item);
-                }
+                ListViewItem item = new ListViewItem(file.Name);
+                item.SubItems.Add("File"); // Hiển thị là file
+                item.SubItems.Add(file.LastWriteTime.ToString()); // Hiển thị ngày sửa đổi
+                item.SubItems.Add((file.Length / 1024.0).ToString("F2") + " KB"); // Hiển thị kích thước tệp (tính bằng KB)
+                listViewFiles.Items.Add(item);
             }
         }
 
@@ -92,6 +93,13 @@ namespace Lab02
             {
                 MessageBox.Show("Đã ở thư mục gốc, không còn thư mục cha để quay lại.");
             }
+        }
+        private void EnterDirectory(string newDirectory)
+        {
+            directoryHistory.Add(currentDirectory); // Lưu lại thư mục hiện tại vào lịch sử
+            currentDirectory = newDirectory; // Cập nhật thư mục hiện tại
+            txtPath.Text = currentDirectory; // Cập nhật TextBox với đường dẫn mới
+            LoadFiles(currentDirectory); // Tải lại các tệp trong thư mục mới
         }
     }
 }

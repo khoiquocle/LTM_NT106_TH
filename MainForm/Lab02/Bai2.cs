@@ -30,10 +30,20 @@ namespace Lab02
             {
                 string filePath = openFileDialog.FileName;
 
+                // Đọc nội dung file
+                string content = File.ReadAllText(filePath);
+
+                // Kiểm tra nếu file rỗng
+                if (string.IsNullOrWhiteSpace(content))
+                {
+                    MessageBox.Show("File bạn chọn bị rỗng. Vui lòng chọn file khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Kết thúc hàm nếu file rỗng
+                }
+
+                // Nếu file không rỗng, hiển thị thông tin như bình thường
                 txtFileName.Text = Path.GetFileName(filePath);
                 txtPath.Text = Path.GetDirectoryName(filePath);
 
-                string content = File.ReadAllText(filePath);
                 txtContent.Text = content;
 
                 int lineCount = content.Count(c => c == '\n') + 1;
@@ -67,6 +77,11 @@ namespace Lab02
         }
 
         private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUrl_Click(object sender, EventArgs e)
         {
 
         }

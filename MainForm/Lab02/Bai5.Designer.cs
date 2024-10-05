@@ -38,11 +38,12 @@
             // labelPath
             // 
             this.labelPath.BackColor = System.Drawing.Color.Transparent;
-            this.labelPath.Location = new System.Drawing.Point(12, 26);
+            this.labelPath.Location = new System.Drawing.Point(11, 15);
+            this.labelPath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelPath.Name = "labelPath";
-            this.labelPath.Size = new System.Drawing.Size(36, 22);
+            this.labelPath.Size = new System.Drawing.Size(28, 15);
             this.labelPath.TabIndex = 0;
-            this.labelPath.Text = "Path";
+            this.labelPath.Text = "Path:";
             this.labelPath.Click += new System.EventHandler(this.labelPath_Click);
             // 
             // txtPath
@@ -56,13 +57,12 @@
             this.txtPath.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPath.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPath.Location = new System.Drawing.Point(65, 14);
-            this.txtPath.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPath.Location = new System.Drawing.Point(43, 9);
             this.txtPath.Name = "txtPath";
             this.txtPath.PasswordChar = '\0';
             this.txtPath.PlaceholderText = "";
             this.txtPath.SelectedText = "";
-            this.txtPath.Size = new System.Drawing.Size(512, 36);
+            this.txtPath.Size = new System.Drawing.Size(341, 23);
             this.txtPath.TabIndex = 1;
             // 
             // btnBrowse
@@ -73,9 +73,10 @@
             this.btnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(595, 14);
+            this.btnBrowse.Location = new System.Drawing.Point(389, 9);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(95, 33);
+            this.btnBrowse.Size = new System.Drawing.Size(70, 21);
             this.btnBrowse.TabIndex = 2;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
@@ -88,9 +89,10 @@
             this.btbBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btbBack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btbBack.ForeColor = System.Drawing.Color.White;
-            this.btbBack.Location = new System.Drawing.Point(706, 14);
+            this.btbBack.Location = new System.Drawing.Point(463, 9);
+            this.btbBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btbBack.Name = "btbBack";
-            this.btbBack.Size = new System.Drawing.Size(74, 32);
+            this.btbBack.Size = new System.Drawing.Size(64, 21);
             this.btbBack.TabIndex = 3;
             this.btbBack.Text = "Back";
             this.btbBack.Click += new System.EventHandler(this.btbBack_Click);
@@ -98,23 +100,25 @@
             // listViewFiles
             // 
             this.listViewFiles.HideSelection = false;
-            this.listViewFiles.Location = new System.Drawing.Point(1, 80);
+            this.listViewFiles.Location = new System.Drawing.Point(-2, 50);
+            this.listViewFiles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewFiles.Name = "listViewFiles";
-            this.listViewFiles.Size = new System.Drawing.Size(799, 370);
+            this.listViewFiles.Size = new System.Drawing.Size(529, 240);
             this.listViewFiles.TabIndex = 4;
             this.listViewFiles.UseCompatibleStateImageBehavior = false;
             this.listViewFiles.View = System.Windows.Forms.View.Details;
             // 
             // Bai5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.listViewFiles);
             this.Controls.Add(this.btbBack);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtPath);
             this.Controls.Add(this.labelPath);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Bai5";
             this.Text = "Form1";
             this.ResumeLayout(false);
